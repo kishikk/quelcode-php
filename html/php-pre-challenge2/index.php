@@ -6,9 +6,9 @@ $array = explode(',', $_GET['array']);
     for ($i = 0; $i < $size; $i++) {
         for ($j = 1; $j < ($size -$i); $j++) {
             if ($array[$j] < $array[$j - 1]) {
-                $tmp = $array[$j];
+                $num1 = $array[$j];
                 $array[$j] = $array[$j - 1];
-                $array[$j - 1] = $tmp;
+                $array[$j - 1] = $num1;
             }
         }
     }
