@@ -1,3 +1,6 @@
-<?
+<?php
+$limit = $_GET['target'];
 
-phpinfo();
+$dsn = 'mysql:dbname=test;host=mysql';
+$dbuser = 'test';
+$dbpassword = 'test';
